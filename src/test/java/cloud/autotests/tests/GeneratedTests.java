@@ -77,7 +77,8 @@ public class GeneratedTests extends TestBase {
             $("#Main-Page-Important-Info-3").click();
         });
 
-        step("title главной страницы должен быть: Вклад «Альфа-Вклад» | Открыть выгодный вклад в Альфа-Банке", () -> {
+        step("title главной страницы должен быть: Вклад «Альфа-Вклад» | " +
+                "Открыть выгодный вклад в Альфа-Банке", () -> {
             String expectedTitle = "Вклад «Альфа-Вклад» | Открыть выгодный вклад в Альфа-Банке";
             String actualTitle = title();
 
