@@ -1,8 +1,11 @@
 package cloud.autotests.tests;
 
+import cloud.autotests.helpers.DriverSettings;
 import cloud.autotests.helpers.DriverUtils;
 import com.codeborne.selenide.Configuration;
+import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.Description;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -15,6 +18,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class GeneratedTests extends TestBase {
 
+    @BeforeAll
+    static void setUpTimeout() {
+        Configuration.timeout = 6000;
+    }
 
     @Test
     @DisplayName("Проверка title главной страницы")
