@@ -1,7 +1,9 @@
 package cloud.autotests.tests;
 
 import cloud.autotests.helpers.DriverUtils;
+import com.codeborne.selenide.Configuration;
 import io.qameta.allure.Description;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
@@ -12,6 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 
 public class GeneratedTests extends TestBase {
+
 
     @Test
     @DisplayName("Проверка title главной страницы")
